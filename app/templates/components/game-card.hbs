@@ -1,3 +1,6 @@
-<div>
-  <img src={{symbol}} />
+<div class="flipper">
+  <div class="front"></div>
+  <div class="back">
+    <img {{action "addToArray" on="click"}} src={{symbol}} />
+  </div>
 </div>
