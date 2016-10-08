@@ -1,0 +1,16 @@
+.little-square {
+  background: black;
+  margin: 10px;
+  display: inline;
+  padding: 15px 25px;
+  line-height: 65px;
+}
+.little-square:nth-child(4n):after {
+  content: "\00000a";
+  white-space: pre;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
