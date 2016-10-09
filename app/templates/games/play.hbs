@@ -1,5 +1,4 @@
 <div class="col-sm-12">
-  {{#each model.cards as |instance|}}
-    {{game-card symbol=instance.url handleCardClick=(action 'handleCardClick')}}
-  {{/each}}
+  {{game-handler model=model}}
+  
 </div>

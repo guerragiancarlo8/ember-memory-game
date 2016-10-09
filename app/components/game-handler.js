@@ -1,11 +1,12 @@
 import Ember from 'ember';
 
-export default Ember.Controller.extend({
-  /*
+export default Ember.Component.extend({
+
   clickedCard: null,
   clickedCards: null,
 
   init() {
+    this._super(...arguments);
     this.set('clickedCard', '');
     this.set('clickedCards', []);
   },
@@ -35,5 +36,4 @@ export default Ember.Controller.extend({
       }
     }
   }
-  */
 });

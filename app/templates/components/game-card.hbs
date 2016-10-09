@@ -1,7 +1,8 @@
-<div class="flipper">
-  <div class="front"></div>
-  <div class="back">
-    <img {{action handleCardClick symbol}} src={{symbol}} />
+<span {{action 'doCardClick' symbol}}>
+  <div id="card" {{action 'toggleIsFlipped'}} class = "{{if isFlipped "flipped"}}">
+    <figure class="front"></figure>
+    <figure class="back">
+      <img src={{symbol}}  />
+    </figure>
   </div>
-</div>
-{{yield}}
+</span>

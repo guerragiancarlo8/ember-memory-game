@@ -1,0 +1,3 @@
+{{#each model.cards as |instance|}}
+  {{game-card symbol=instance.url onCardClick=(action 'handleCardClick')}}
+{{/each}}
