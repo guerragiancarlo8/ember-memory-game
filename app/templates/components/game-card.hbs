@@ -1,3 +1,12 @@
+<span {{action 'doCardClick' card}}>
+  <div id="card" {{action 'doCardFlip' card }} class = "{{if card.isFlipped "flipped"}}">
+    <figure class="front"></figure>
+    <figure class="back">
+      <img src={{symbol}}  />
+    </figure>
+  </div>
+</span>
+<!--
 <span {{action 'doCardClick' symbol}}>
   <div id="card" {{action 'toggleIsFlipped'}} class = "{{if isFlipped "flipped"}}">
     <figure class="front"></figure>
@@ -6,3 +15,4 @@
     </figure>
   </div>
 </span>
+-->

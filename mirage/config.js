@@ -13,7 +13,7 @@ export default function() {
     }
 
     return array;
-  };
+  }
   let games = [
     {
       id: '4',
@@ -21,12 +21,20 @@ export default function() {
       attributes: {
         cards: [
           {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }]
       }
@@ -37,16 +45,28 @@ export default function() {
       attributes: {
         cards: [
           {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }]
       }
@@ -57,20 +77,36 @@ export default function() {
       attributes: {
         cards: [
           {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/celery.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/celery.png"
           }]
       }
@@ -81,24 +117,44 @@ export default function() {
       attributes: {
         cards: [
           {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/celery.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/celery.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/orange.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/orange.jpg"
           }]
       }
@@ -109,36 +165,60 @@ export default function() {
       attributes: {
         cards: [
           {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/apple.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/banana.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/broccoli.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/celery.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/celery.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/orange.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/orange.jpg"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/tomato.png"
           }, {
+            isFlipped: false,
+            isDisabled: false,
             url: "../assets/images/tomato.png"
           }]
       }
   }];
 
   this.get('/games', function (db, request) {
-    return {data: games}
-  })
+    return {data: games};
+  });
   this.get('/games/:id', function (db, request) {
     var game = games.find((game) => request.params.id === game.id);
     var cardsShuffled = shuffle(game.attributes.cards);

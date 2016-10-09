@@ -1,4 +1,10 @@
 <div class="col-sm-12">
-  {{game-handler model=model}}
-  
+  {{#each model.cards as |instance|}}
+    {{game-card card=instance symbol=instance.url onCardClick=(action 'handleCardClick') toggleIsFlipped=(action 'toggleIsFlipped')}}
+  {{/each}}
 </div>
+
+
+<!--<div class="col-sm-12">
+  {{game-handler model=model}}
+</div>-->
