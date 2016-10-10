@@ -17,13 +17,20 @@ body {
 .wrapper {
   box-shadow: 0 4px 2px -2px gray;
   background: white;
-
 }
 
 #gameButtons {
   margin: 0 auto;
+  width:
 }
 
+.gamesizebutton {
+  float: left;
+  margin-left: 25px;
+  margin-top: 10px;
+  width: 20%;
+
+}
 #cardsContainer{
   padding-left: 15%;
   margin: auto;
