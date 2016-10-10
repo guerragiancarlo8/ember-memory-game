@@ -4,7 +4,32 @@
   {{/each}}
 </div>
 
+{{#bs-modal footer=false body=false open=openModal title="You Won!" closedAction="reloadGame"}}
+   <!-- some gif -->
+   {{#bs-modal-body}}
+    <iframe src="//giphy.com/embed/2vA33ikUb0Qz6" width="480" height="384" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reactiongifs-2vA33ikUb0Qz6">via GIPHY</a></p>
+   {{/bs-modal-body}}
+   {{#bs-modal-footer as |footer|}}
+    {{#bs-button action=(action 'close' target=footer)}} Play Again {{/bs-button}}
+    {{#bs-button action=(action 'backToMainMenu')}} Back To Main Menu {{/bs-button}}
+   {{/bs-modal-footer}}
+ {{/bs-modal}}
+<!--
+<div id="gameOver" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4> Game Over </h4>
+      </div>
+      <div class="modal-body">
+        <button {{action 'doRefresh'}}>
+          Play Again
+        </button>
 
-<!--<div class="col-sm-12">
-  {{game-handler model=model}}
-</div>-->
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+-->

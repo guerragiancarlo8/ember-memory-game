@@ -1,4 +1,66 @@
-<h4> Please select game difficulty </h4>
+<!--<h4> Please select game difficulty </h4>-->
+<button id="start" {{action 'backToMainMenu' }} type="button" class="btn btn-primary btn-lg">
+    Back To Main Menu
+</button>
+
+{{#bs-modal open=openModal title="Start Game" closedAction="closeModal"}}
+  {{#link-to 'games.play' 4}}
+    <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'closeModal'}}>4</button>
+  {{/link-to}}
+
+  {{#link-to 'games.play' 6}}
+    <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'closeModal'}}>6</button>
+  {{/link-to}}
+
+  {{#link-to 'games.play' 8}}
+    <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'closeModal'}}>8</button>
+  {{/link-to}}
+
+  {{#link-to 'games.play' 10}}
+    <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'closeModal'}}>10</button>
+  {{/link-to}}
+
+  {{#link-to 'games.play' 12}}
+    <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'closeModal'}}>12</button>
+  {{/link-to}}
+{{/bs-modal}}
+<!--
+<div id="startModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4> Please select game difficulty </h4>
+      </div>
+      <div class="modal-body">
+        {{#link-to 'games.play' 4}}
+          <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'disableAfterClick'}}>4</button>
+        {{/link-to}}
+
+        {{#link-to 'games.play' 6}}
+          <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'disableAfterClick'}}>6</button>
+        {{/link-to}}
+
+        {{#link-to 'games.play' 8}}
+          <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'disableAfterClick'}}>8</button>
+        {{/link-to}}
+
+        {{#link-to 'games.play' 10}}
+          <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'disableAfterClick'}}>10</button>
+        {{/link-to}}
+
+        {{#link-to 'games.play' 12}}
+          <button type="button" class="btn btn-default" data-dismiss="modal" {{action 'disableAfterClick'}}>12</button>
+        {{/link-to}}
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
 {{#link-to 'games.play' 4}}
   4
 {{/link-to}}
@@ -18,4 +80,5 @@
 {{#link-to 'games.play' 12}}
   12
 {{/link-to}}
+-->
 {{outlet}}

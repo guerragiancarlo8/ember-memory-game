@@ -8,8 +8,9 @@ export default Ember.Component.extend({
     },
     doCardFlip(param) {
       //hacky way of disabling card flip on win. gotta work on this
-      if(!param.isDisabled)
+      if(!param.isDisabled){
         this.get('toggleIsFlipped')(param);
+      }
     }
   }
 });
