@@ -7,14 +7,11 @@ export default Ember.Route.extend({
   setupController(controller, model) {
     controller.set('model', model);
   },
-
-  actions() {
+  actions: {
     showModal() {
       $(window).load(function () {
         $('#startModal').modal('show');
-      });
+      })
     }
-
   }
-
 });

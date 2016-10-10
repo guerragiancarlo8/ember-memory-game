@@ -1,8 +1,38 @@
-.flip-container {
-  margin: 10px;
+/* CSS for game buttons and initial modal */
+body {
+  background: #d3d3d3;
+}
+#buttonsContainer {
+  text-align: center;
+}
+.uibutton {
   display: inline-block;
-  width: 100px;
-  height: 150px;
+  margin: 5px;
+}
+
+#titleContainer{
+  text-align: center;
+}
+.wrapper {
+  box-shadow: 0 4px 2px -2px gray;
+  background: white;
+}
+
+#gameButtons {
+  margin: 0 auto;
+}
+
+#cardsContainer{
+  padding-left: 15%;
+  margin: auto;
+  background: #d3d3d3;
+}
+/* CSS for game cards */
+.flip-container {
+
+  display: inline-block;
+  width: 20%;
+  height: 100px;
   perspective: 800px;
   position: relative;
 }
@@ -52,6 +82,6 @@
 
 img {
   -webkit-transform: translateZ(-1px);
-  width: 100px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
 }

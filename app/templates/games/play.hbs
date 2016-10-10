@@ -1,13 +1,19 @@
-<div class="col-sm-12">
+<audio id="cardFlip" src="../assets/sounds/cardPlace1.mp3"></audio>
+<audio id="wrongPair" src="../assets/sounds/cardPlace1.wav"></audio>
+<audio id="rightPair" src="../assets/sounds/pair.mp3"></audio>
+<audio id="gameWin" src="../assets/sounds/sucess.mp3"></audio>
+
+
+<div id="cardsContainer">
   {{#each model.cards as |instance|}}
     {{game-card card=instance symbol=instance.url onCardClick=(action 'handleCardClick') toggleIsFlipped=(action 'toggleIsFlipped')}}
   {{/each}}
 </div>
 
-{{#bs-modal footer=false body=false open=openModal title="You Won!" closedAction="reloadGame"}}
+{{#bs-modal footer=false body=false open=openModal title="You Won!" closedAction="reloadGame" backdropClose=false closeButton=false}}
    <!-- some gif -->
    {{#bs-modal-body}}
-    <iframe src="//giphy.com/embed/2vA33ikUb0Qz6" width="480" height="384" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/reactiongifs-2vA33ikUb0Qz6">via GIPHY</a></p>
+    <iframe src="//giphy.com/embed/nXG5HeHEVErza" width="100%" height="380" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fruits-nXG5HeHEVErza"></a></p>
    {{/bs-modal-body}}
    {{#bs-modal-footer as |footer|}}
     {{#bs-button action=(action 'close' target=footer)}} Play Again {{/bs-button}}
