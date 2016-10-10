@@ -4,6 +4,7 @@ body {
 }
 #buttonsContainer {
   text-align: center;
+  height: 70px;
 }
 .uibutton {
   display: inline-block;
@@ -16,6 +17,7 @@ body {
 .wrapper {
   box-shadow: 0 4px 2px -2px gray;
   background: white;
+
 }
 
 #gameButtons {
@@ -32,11 +34,12 @@ body {
 
   display: inline-block;
   width: 20%;
-  height: 100px;
+  height: 110px;
   perspective: 800px;
   position: relative;
 }
 
+/*support for mobile devices on touch */
 [data-ember-action] {
   cursor: pointer;
 }

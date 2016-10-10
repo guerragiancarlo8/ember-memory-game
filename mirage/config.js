@@ -253,7 +253,7 @@ export default function() {
       }
   }];
 
-  this.get('/games', function (db, request) {
+  this.get('/games', function () {
     return {data: games};
   });
   this.get('/games/:id', function (db, request) {

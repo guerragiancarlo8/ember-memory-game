@@ -6,7 +6,6 @@ export default Ember.Controller.extend({
   init() {
     this.set('openModal', true);
   },
-
   actions: {
     //disable the get started button after a game has begun.
     //when game completes, enable again.

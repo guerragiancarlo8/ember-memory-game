@@ -9,9 +9,9 @@ export default Ember.Route.extend({
   },
   actions: {
     showModal() {
-      $(window).load(function () {
-        $('#startModal').modal('show');
-      })
+      window.onload = function () {
+        document.getElementById('#startModal').modal('show');
+      };
     }
   }
 });
