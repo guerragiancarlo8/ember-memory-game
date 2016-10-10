@@ -1,5 +1,5 @@
 import { test } from 'qunit';
-import moduleForAcceptance from 'testground/tests/helpers/module-for-acceptance';
+import moduleForAcceptance from 'ember-memory-game/tests/helpers/module-for-acceptance';
 
 moduleForAcceptance('Acceptance | games');
 

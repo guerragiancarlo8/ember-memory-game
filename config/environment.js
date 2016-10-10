@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'testground',
+    modulePrefix: 'ember-memory-game',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

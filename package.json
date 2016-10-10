@@ -1,7 +1,6 @@
 {
-  "name": "testground",
-  "version": "0.0.0",
-  "description": "Small description for testground goes here",
+  "name": "ember-memory-game",
+  "version": "1.2.49",
   "private": true,
   "directories": {
     "doc": "doc",
