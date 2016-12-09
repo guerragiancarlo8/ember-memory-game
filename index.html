@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Ember Memory Game by guerragiancarlo8</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Ember Memory Game</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/guerragiancarlo8/ember-memory-game">View the Project on GitHub <small>guerragiancarlo8/ember-memory-game</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/guerragiancarlo8/ember-memory-game/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/guerragiancarlo8/ember-memory-game/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/guerragiancarlo8/ember-memory-game">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="ember-memory-game" class="anchor" href="#ember-memory-game" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Ember Memory Game</h1>
+
+<p>An implementation of a memory game using EmberJS. I decided to kindly nickname it "Fruity Memory", because all images and gifs within this application are fruit or vegetable related. The user is first taken to a modal where he/she has to select how many squares he/she'd like to play (4, 6, 8, 10 or 12). Afterwards, he/she is taken to the game route where the user must match pairs of fruit/veggies until all cards have been revealed. The app has been tested to run on mobile devices both inside the Chrome dev tools and in actual physical devices. This application also comes with a basic test suite to validate basic User Experience.</p>
+
+<h1>
+<a id="end-user-considerations" class="anchor" href="#end-user-considerations" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>End-User Considerations</h1>
+
+<p>While I could have easily added more cards into the game, and styled the cards to look more "normal", I took the liberty of making several assumptions about the end-user of this application. The first is that this application will mainly be used by young children who are more interested in the visual aspect of interaction than the number of cards to be completed. Thus special priority was placed in visual components such as animations and sounds as opposed to number of cards and overall game complexity.</p>
+
+<p>The second consideration was for mobile device users. Since my goal was mainly the visual appeal, cards were limited to just 12. This enabled me to create bigger and more visually appealing cards for both desktop and mobile users, which were the appropriate size for both click and tap events. </p>
+
+<h2>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<p>You will need the following things properly installed on your computer.</p>
+
+<ul>
+<li><a href="http://git-scm.com/">Git</a></li>
+<li>
+<a href="http://nodejs.org/">Node.js</a> (with NPM)</li>
+<li><a href="http://bower.io/">Bower</a></li>
+<li><a href="http://ember-cli.com/">Ember CLI</a></li>
+<li><a href="http://phantomjs.org/">PhantomJS</a></li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<ul>
+<li>
+<code>git clone https://github.com/guerragiancarlo8/ember-memory-game.git</code> this repository</li>
+<li><code>cd ember-memory-game</code></li>
+<li><code>npm install</code></li>
+<li><code>bower install</code></li>
+</ul>
+
+<h2>
+<a id="running--development" class="anchor" href="#running--development" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Running / Development</h2>
+
+<ul>
+<li><code>ember serve</code></li>
+<li>Visit your app at <a href="http://localhost:4200">http://localhost:4200</a>.</li>
+</ul>
+
+<h3>
+<a id="code-generators" class="anchor" href="#code-generators" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Generators</h3>
+
+<p>Make use of the many generators for code, try <code>ember help generate</code> for more details</p>
+
+<h3>
+<a id="running-tests" class="anchor" href="#running-tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Running Tests</h3>
+
+<ul>
+<li><code>ember test</code></li>
+<li><code>ember test --server</code></li>
+</ul>
+
+<h3>
+<a id="building" class="anchor" href="#building" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Building</h3>
+
+<ul>
+<li>
+<code>ember build</code> (development)</li>
+<li>
+<code>ember build --environment production</code> (production)</li>
+</ul>
+
+<h3>
+<a id="deploying" class="anchor" href="#deploying" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deploying</h3>
+
+<p>Specify what it takes to deploy your app.</p>
+
+<h2>
+<a id="further-reading--useful-links" class="anchor" href="#further-reading--useful-links" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Further Reading / Useful Links</h2>
+
+<ul>
+<li><a href="http://emberjs.com/">ember.js</a></li>
+<li><a href="http://ember-cli.com/">ember-cli</a></li>
+<li>Development Browser Extensions
+
+<ul>
+<li><a href="https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi">ember inspector for chrome</a></li>
+<li><a href="https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/">ember inspector for firefox</a></li>
+</ul>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/guerragiancarlo8">guerragiancarlo8</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
